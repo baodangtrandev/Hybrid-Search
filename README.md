@@ -5,6 +5,7 @@ This repository demonstrates a hybrid search implementation using Pinecone. The 
 - [Requirements](#Requirements)
 - [Installation](#Installation)
 - [Usage](#Usage)
+- [Dataset](#Dataset)
 - [Library](#Library)
 - [Functions](#Functions)
   + [Hybrid Scale](#HybridScale)
@@ -17,8 +18,26 @@ This repository demonstrates a hybrid search implementation using Pinecone. The 
 - Pinecone database [(Setup)](#SetupPineconeDatabase)
 - Necessary Library
 
+## Usage
+
+## Dataset
+I use [pubmed_qa](https://huggingface.co/datasets/qiaojin/PubMedQA) dataset on on Hugging Face Datasets. I download it like so:
+```bash
+!pip install datasets
+from datasets import load_dataset
+pubmed = load_dataset(
+   'pubmed_qa',
+   'pqa_labeled',
+   split='train'
+)
+```
 ## Installation
 ```bash
 git clone https://github.com/baodangtrandev/Hybrid-Search
 cd Hybrid-Search
 ```
+If you don't have requirements library, try to install them. Easy to install necessary library:
+```bash
+pip install -r requirements.txt
+```
+
