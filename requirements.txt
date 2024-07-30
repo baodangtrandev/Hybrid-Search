@@ -1,0 +1,5 @@
+datasets
+transformers
+rank_bm25
+sentence-transformers
+pinecone-client
