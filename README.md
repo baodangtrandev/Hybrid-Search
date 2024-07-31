@@ -1,6 +1,17 @@
 # Hybrid Search with Pinecone
 ## Overview
 This repository demonstrates a hybrid search implementation using Pinecone. The hybrid search leverages both dense and sparse vector representations to enhance search results. This approach combines the strengths of dense embeddings (like those from neural networks) with sparse embeddings (such as those from traditional text representations) to improve search accuracy and relevance.
+
+Combining dense and sparse search functionalities traditionally required substantial effort. In the past, engineering teams had to deploy separate solutions for dense and sparse search engines, alongside an additional system to merge the results effectively. This typically involved maintaining a dense vector index, a sparse inverted index, and a reranking process.
+
+Pinecone's hybrid search method simplifies this by using a unified sparse-dense index. This approach facilitates searches across various modalities, including text, audio, and images. Additionally, the balance between dense and sparse searches can be adjusted easily with the alpha parameter, streamlining the process.
+![Hybrid_model](images/hybrid_model.png)
+*Cre: James Briggs*
+
+Queries closely resemble pure dense vector queries, with the key difference being the inclusion of a sparse vector version of the query alongside the usual dense vector representation.
+![query_model](images/query_model.png)
+*Cre: James Briggs*
+
 ## Table of Contents
 - [Requirements](#Requirements)
 - [Installation](#Installation)
