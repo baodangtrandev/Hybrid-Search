@@ -4,21 +4,34 @@ This repository demonstrates a hybrid search implementation using Pinecone. The 
 ## Table of Contents
 - [Requirements](#Requirements)
 - [Installation](#Installation)
-- [Usage](#Usage)
 - [Dataset](#Dataset)
 - [Library](#Library)
-- [Functions](#Functions)
-  + [Hybrid Scale](#HybridScale)
-  + [Hybrid Query](#HybridQuery)
 - [Example](#Example)
 - [Contributing](#Contributing)
+
+  ## Installation
+```bash
+git clone https://github.com/baodangtrandev/Hybrid-Search
+cd Hybrid-Search
+```
+If you don't have requirements library, try to install them. Easy to install necessary library:
+```bash
+pip install -r requirements.txt
+```
+If you don't have jupyter notebook, please install:
+```bash
+pip install --user jupyterlab
+```
+Connect to Jupyter Lab:
+```bash
+jupyter notebook
+```
 
 ## Requirements
 - Python 3.6+
 - Pinecone database [(Setup)](#SetupPineconeDatabase)
 - Necessary Library
-
-## Usage
+- Jupyter NoteBook
 
 ## Dataset
 I use [pubmed_qa](https://huggingface.co/datasets/qiaojin/PubMedQA) dataset on on Hugging Face Datasets. I download it like so:
@@ -31,13 +44,15 @@ pubmed = load_dataset(
    split='train'
 )
 ```
-## Installation
-```bash
-git clone https://github.com/baodangtrandev/Hybrid-Search
-cd Hybrid-Search
-```
-If you don't have requirements library, try to install them. Easy to install necessary library:
-```bash
-pip install -r requirements.txt
-```
+## Library
+You need install some library to run model:
+ - [Dataset Hugging Face library](https://github.com/huggingface/datasets)
+ - [Transformers library](https://github.com/huggingface/transformers)
+ - [rank-bm25 library](https://github.com/dorianbrown/rank_bm25)
+ - [Sentence Transformers library](https://github.com/UKPLab/sentence-transformers)
+ - [Pinecone Client library](https://github.com/pinecone-io/pinecone-python-client)
+ - [Tqdm library](https://github.com/tqdm/tqdm)
+
+## Setup Pinecone Database
+
 
