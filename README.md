@@ -29,7 +29,7 @@ jupyter notebook
 
 ## Requirements
 - Python 3.6+
-- Pinecone database [(Setup)](#SetupPineconeDatabase)
+- Pinecone database [(Setup)](#Setup Pinecone Database)
 - Necessary Library
 - Jupyter NoteBook
 
